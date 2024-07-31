@@ -1,1 +1,231 @@
-/* ini css */
+/* untuk ubah font seluruh body */
+body{
+    font-family: arial;
+    letter-spacing: 0.1px;
+}
+
+/* css untuk navigasi */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    background-color: #E0F4FF;
+}
+
+.nav-container{
+    display: flex;
+}
+a:link {
+    text-decoration: none;
+    color: #03346E;
+  }
+
+.nav-container > div{
+    border: 1px solid;
+    padding: 8px;
+    color: #03346E;
+}
+
+/* bagian judul */
+.main-title{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-title > header{
+    font-size: 20px;
+}
+
+/* konten keseluruhan */
+.main-content{
+    display: flex;
+}
+
+/* konten keseluruhan */
+.main-content-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.button-pict{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#button-pict-previous{
+    width: 10%;
+    height: 42px;
+    margin: 12px 5px 0px 0px;
+}
+#button-pict-next{
+    width: 10%;
+    height: 42px;
+    margin: 12px 0px 0px 5px
+}
+
+
+/* keterangan banner */
+.banner-caption{
+    font-style: italic;
+    color: #03346E;
+    margin: 0px;
+    padding: 20px 30px 20px;
+}
+
+/* icon dan pengguna */
+.main-item{
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 25px 30px;
+}
+.item-icon{
+    padding: 3px 0px 0px;
+}
+.user-item{
+    padding: 0px 0px 0px 10px;
+    color: #03346E;
+}
+#user-icon{
+    margin: 0px 0px 3px 0px;
+}
+#user-job{
+    font-style: italic;
+    margin: 3px 0px 0px 0px;
+}
+
+/* konten sebelah kiri */
+#form{
+    padding: 35px;
+    background-color: #E0F4FF;
+    margin: 15px;
+    width: 55%;
+    height: 50%;
+    color: #03346E;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid;
+    box-sizing: border-box;
+
+  }
+
+select{
+    width: 100%;
+    margin: 8px 0px;
+    padding: 12px 20px;
+}
+
+button{
+    width: 50%;
+    height: 42px;
+    background-color: #03346E;
+    border: none;
+    border-radius: 4px;
+    margin: 12px 0px;
+    font-weight: bold;
+    color: #E0F4FF;
+}
+
+  /* artikel bawah gambar */
+.profit-article{
+    font-weight: bold;
+    color: #03346E;
+}
+.profit-list{
+    display: flex;
+    flex-direction: row-reverse;
+    color: #03346E;
+}
+.profit-list-teks{
+    padding: 0px 0px 0px 18px;
+}
+
+/* bagian package */
+.section-package{
+    text-align: center;
+    background-color: #03346E ;
+    padding: 70px;
+    font-size: 32px;
+    color: #E0F4FF;
+}
+
+.section-trip{
+    display: flex;
+    flex-wrap: wrap;
+    color: #03346E;
+}
+
+.article-trip-ln{
+    display: flex;
+}
+
+.article-trip-dom{
+    display: flex;
+}
+
+.trip-item {
+    display: flex;
+    margin-bottom: 20px;
+    flex: 1 1 300px; /* Responsif, minimal lebar 300px */
+}
+.trip-icon {
+    padding: 23px 10px 0px 20px;
+    flex-shrink: 0; /* Ikon tidak mengecil */
+}
+.icon img {
+    vertical-align: middle; /* Untuk memastikan gambar di tengah */
+}
+.trip-info {
+    margin: 0px;
+    padding: 10px 0px 0px 10px;
+    flex-grow: 1; /* Info mengisi ruang yang tersedia */
+}
+
+/* Khusus luar negeri */
+.article-trip-ln {
+    padding: 30px 70px 30px 50px
+}
+
+/* Khusus dalam negeri */
+.article-trip-dom {
+    padding: 30px 70px 40px 50px;
+}
+
+/* agar responsif */
+@media only screen and (max-width: 480px) {
+    .main-content{
+        flex-direction: column;
+    }
+    .article-trip-ln{
+        flex-direction: column;
+    }
+    .article-trip-dom{
+        flex-direction: column;
+    }
+}
+
+/* bagian bawah */
+.closing{
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/16/19/40/mountains-1985027_1280.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    color: #03346E;
+    padding: 50px 120px 50px 120px;
+}
+
+.closing > h1{
+    font-size: 32px;
+}

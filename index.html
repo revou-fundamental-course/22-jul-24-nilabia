@@ -3,10 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css\styles.css"
+    <title>Mini Project RevoU</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <nav>
+        <header>
+            <div class="logo-icon"><img src="assets/logo.png" width="150px"></div>
+        </header>
+
+        <section class="nav-container">
+            <div><a href=#home>Home</a></div>
+            <div><a href=#package>Our Package</a></div>
+            <div><a href=#form>Call Us</a></div>
+        </section>
+    </nav>
+
+    <main>
+        <!-- tulisan judul -->
+        <article class="main-title" id="home">
+            <header>
+                <h1>Your Trusted Travel Agent's</h1>
+            </header>
+
+            <p>Your happiness is our happiness..</p>
+        </article>
+
+        <section class="main-content">
+            <!-- section sebelah kiri -->
+            <article class="main-content-item">
+                <div class="main-content-banner">
+                    <img class="img-slideshow" src="https://cdn.pixabay.com/photo/2020/06/06/16/42/summer-5267305_1280.jpg" width="100%">
+                    <img class="img-slideshow" src="https://cdn.pixabay.com/photo/2017/11/24/21/49/bali-2975787_1280.jpg" width="100%">
+                    <img class="img-slideshow" src="https://cdn.pixabay.com/photo/2023/05/22/13/45/mount-fuji-8010752_1280.jpg" width="100%">
+                </div>
+
+                <div class="button-pict">
+                    <button onclick="plusDivs(-1)" id="button-pict-previous">Previous</button>
+                    <button onclick="plusDivs(1)" id="button-pict-next">Next</button>
+                </div>
+                
+
+                <div>
+                    <p class="banner-caption">"Liburanku jadi menyenangkan bersama Travel Agentku."</p>
+                </div>
+
+                <!--untuk icon dan keterangan -->
+                <div class="main-item">
+                    <div class="item-icon"><img src="assets/user.png" height="35px" width="35px"></div>
+                    <div class="user-item">
+                        <h3 class="user-item" id="user-icon">Florence Hughes</h3>
+                        <p class="user-item" id="user-job">Ibu Rumah Tangga, 28</p>
+                    </div>
+                </div>
+
+                <hr width="100px">
+
+                <!-- bagian bawah artikel -->
+                <div class="profit-article">
+                    <p>Agent Travel menawarkan berbagai keuntungan, mulai dari harga yang 
+                        kompetitif hingga pengalaman perjalanan yang lebih lancar dan terencana diantaranya sebagai berikut:
+                    </p>
+                </div>
+
+                    <div class="profit-list">
+                        <div class="profit-list-teks">
+                            <p>
+                                Travel Agent mengurus semua detail perjalanan Anda, 
+                                sehingga Anda bisa fokus bersantai dan menikmati liburan.
+                            </p>
+                            <p>
+                                Travel Agent memiliki akses ke harga terbaik untuk tiket pesawat, 
+                                hotel, dan paket wisata, sehingga Anda dapat menghemat biaya perjalanan.
+                            </p>
+                            <p>
+                                Jasa travel menyusun itinerary yang detail, termasuk transportasi, 
+                                akomodasi, dan aktivitas wisata, sehingga perjalanan Anda berjalan lancar dan sesuai rencana.
+                            </p>
+                        </div>
+                    <div class="profit-list-number">
+                        <p><img src="assets/1.png" height="33px" width="33px"></p>
+                        <p><img src="assets/2.png" height="33px" width="33px"></p>
+                        <p><img src="assets/3.png" height="33px" width="33px"></p>
+                    </div>
+                </div>                    
+            </article>
+           
+            <!-- form sebelah kanan -->
+            <form class="main-content-item" id="form">
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>Kami akan menghubungi Anda dalam 1x24 jam setelah menerima data Anda.</p>
+                    
+                    <label for="name">Your Name:</label>
+                    <input class="input-form" type="text" id="input-name" placeholder="First and last name">
+
+                    <label for="email">E-mail Address:</label>
+                    <input class="input-form" type="email" id="input-email" placeholder="example@gmail.com">
+                    
+                    <label for="interest">What are you interested in?</label>
+                    <br/>
+                    <select id="interest" name="option">
+                        <option value="select option">Select option</option>
+                        <option value="overseas tourism">Overseas Tourism</option>
+                        <option value="domestic tourism">Domestic Tourism</option>
+                    </select>
+                </div>
+                               
+                <!-- pakai type button agar bisa di pake js dan gak refresh ulang-->
+                <button type="button" onclick="formValidation();">SEND</button>
+            </form>
+        </section>
+    </main>
     
+    <!-- bagian package -->
+    <section id="package">
+        <h1 class="section-package">Our Package</h1>
+    </section>
+
+    <!-- isi package -->
+    <section class="section-trip">
+        <!-- artikel trip luar negeri -->
+        <article class="article-trip-ln">
+            <div class="trip-item">
+                <div class="trip-icon">
+                    <img src="assets/pesawat.png" height="35px" width="35px">
+                </div>
+                <div class="trip-info">
+                    <h3>Japan</h3>
+                    <p>
+                        Jelajahi keindahan alam Jepang, budaya tradisional, 
+                        dan kuliner lezat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="trip-item">
+                <div class="trip-icon">
+                    <img src="assets/pesawat.png" height="35px" width="35px">
+                </div>
+                <div class="trip-info">
+                    <h3>South Korea</h3>
+                    <p>
+                        Rasakan budaya K-Pop, sejarah, dan kuliner 
+                        lezat di Korea Selatan.
+                    </p>
+                </div>
+            </div>
+
+            <div class="trip-item">
+                <div class="trip-icon">
+                    <img src="assets/pesawat.png" height="35px" width="35px">
+                </div>
+                <div class="trip-info">
+                    <h3>Europa</h3>
+                    <p>
+                        Jelajahi berbagai negara di Eropa dengan budaya, 
+                        sejarah, dan lanskap yang beragam.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <hr width="100px">
+
+        <!-- artikel trip domistik -->
+        <article class="article-trip-dom">
+            <div class="trip-item">
+                <div class="trip-icon">
+                    <img src="assets/bintang.png" height="35px" width="35px">
+                </div>
+                <div class="trip-info">
+                    <h3>Bali</h3>
+                    <p>
+                        Rasakan surga tropis, 
+                        budaya spiritual, dan kemewahan spa di Bali.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="trip-item">
+                <div class="trip-icon">
+                    <img src="assets/bintang.png" height="35px" width="35px">
+                </div>
+                <div class="trip-info">
+                    <h3>Lombok</h3>
+                    <p>
+                        Jelajahi keindahan alam Lombok, 
+                        dari pantai hingga gunung berapi.
+                    </p>
+                </div>
+            </div>
+
+            <div class="trip-item">
+                <div class="trip-icon">
+                    <img src="assets/bintang.png" height="35px" width="35px">
+                </div>
+                <div class="trip-info">
+                    <h3>Raja Ampat</h3>
+                    <p>
+                        Nikmati keindahan bawah laut yang 
+                        menakjubkan dengan terumbu karang 
+                        dan biota laut yang beragam.
+                    </p>
+                </div>
+            </div>   
+        </article>
+    </section>
+
+    <!-- bagian bawah -->
+    <article class="closing">
+        <h1>Enjoy Your Adventure!</h1>
+        <p>Temukan destinasi impianmu dan mulailah petualangan 
+            yang tak terlupakan bersama kami. 
+            Dengan paket perjalanan terbaik dan harga terjangkau, 
+            kami siap membantu mewujudkan impian travelingmu.</p>
+    </article>
 </body>
+<script src="js/script.js"></script>
 </html>
